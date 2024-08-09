@@ -3,52 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutiger Aero Style Website</title>
+    <title>Media Player Inspired Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Frutiger:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Frutiger Aero Style</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Media Player Style</h1>
         </div>
     </header>
     <main>
         <div class="container">
-            <section class="intro">
-                <h2>Welcome to the Future</h2>
-                <p>Experience sleek design and smooth interfaces with our Frutiger Aero-inspired style.</p>
-                <button class="cta-button">Learn More</button>
+            <section class="player">
+                <h2>Now Playing</h2>
+                <div class="player-controls">
+                    <button class="control-button" id="prev"><<</button>
+                    <button class="control-button" id="play">▶</button>
+                    <button class="control-button" id="pause">||</button>
+                    <button class="control-button" id="next">>></button>
+                </div>
+                <div class="track-info">
+                    <p id="track-title">Track Title</p>
+                    <p id="track-artist">Artist Name</p>
+                </div>
+                <input type="range" id="progress-bar" value="0" max="100">
             </section>
-            <section class="content">
-                <h2>Our Services</h2>
-                <div class="service">
-                    <h3>Service One</h3>
-                    <p>Description of Service One.</p>
-                </div>
-                <div class="service">
-                    <h3>Service Two</h3>
-                    <p>Description of Service Two.</p>
-                </div>
-                <div class="service">
-                    <h3>Service Three</h3>
-                    <p>Description of Service Three.</p>
-                </div>
+            <section class="upload">
+                <h2>Upload Your Songs</h2>
+                <input type="file" id="file-upload" accept="audio/*">
+                <button id="upload-button">Upload</button>
             </section>
         </div>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Frutiger Aero Style. All rights reserved.</p>
+            <p>&copy; 2024 Media Player Style. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
