@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Frutiger', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background: #e0e0e0; /* Light gray background */
@@ -12,17 +12,18 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background: #ffffff; /* White background for content */
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Glass effect */
 }
 
 /* Header */
 header {
-    background: #0078d4; /* Windows Aero blue */
+    background: linear-gradient(to bottom, #0078d4, #005a9e); /* Aero blue gradient */
     color: #ffffff;
     padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -31,91 +32,93 @@ header h1 {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-main {
-    padding: 40px 0;
-}
-
-.intro {
+/* Player Section */
+.player {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.intro h2 {
-    font-size: 2em;
+.player h2 {
+    font-size: 1.8em;
     color: #0078d4; /* Blue for emphasis */
 }
 
-.intro p {
-    font-size: 1.2em;
+.player-controls {
     margin: 20px 0;
 }
 
-.cta-button {
-    background: #0078d4; /* Blue button */
+.control-button {
+    background: #0078d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+.control-button:hover {
+    background: #005a9e; /* Darker blue on hover */
+}
+
+.track-info {
+    margin: 20px 0;
+}
+
+#track-title, #track-artist {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    background: #0078d4;
+    border-radius: 5px;
+    outline: none;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Upload Section */
+.upload {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#file-upload {
+    margin: 20px 0;
+}
+
+#upload-button {
+    background: #0078d4;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-.cta-button:hover {
+#upload-button:hover {
     background: #005a9e; /* Darker blue on hover */
-}
-
-/* Services Section */
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.service {
-    background: #f4f4f4; /* Light gray for service blocks */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.service h3 {
-    margin-top: 0;
 }
 
 /* Footer */
 footer {
-    background: #0078d4; /* Matching the header */
+    background: linear-gradient(to top, #0078d4, #005a9e); /* Matching the header */
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
