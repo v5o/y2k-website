@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Frutiger', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    background: #0078d4; /* Windows Aero blue */
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #0078d4; /* Blue for emphasis */
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: #0078d4; /* Blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: #005a9e; /* Darker blue on hover */
+}
+
+/* Services Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    background: #f4f4f4; /* Light gray for service blocks */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #0078d4; /* Matching the header */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
