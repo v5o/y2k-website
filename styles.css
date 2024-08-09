@@ -12,10 +12,10 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px); /* Glass effect */
+    backdrop-filter: blur(10px); /* Glass effect */
 }
 
 /* Header */
@@ -56,11 +56,13 @@ header h1 {
     font-size: 1.5em;
     cursor: pointer;
     margin: 0 10px;
-    transition: background 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .control-button:hover {
     background: #005a9e; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .track-info {
@@ -79,6 +81,7 @@ header h1 {
     background: #0078d4;
     border-radius: 5px;
     outline: none;
+    margin: 20px 0;
 }
 
 #progress-bar::-webkit-slider-thumb {
@@ -88,6 +91,7 @@ header h1 {
     background: #ffffff;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Upload Section */
@@ -108,11 +112,13 @@ header h1 {
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #upload-button:hover {
     background: #005a9e; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Footer */
