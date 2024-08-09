@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.load();
             audio.play();
             trackTitle.textContent = file.name;
-            trackArtist.textContent = 'Unknown Artist'; // You might want to implement additional metadata extraction
+            trackArtist.textContent = 'Unknown Artist'; // Placeholder
             currentTrack = file;
         }
     });
