@@ -3,24 +3,24 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark gray text */
+    background: #f4f4f4; /* Light background */
+    color: #333; /* Text color */
 }
 
 /* Container */
 .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(12px); /* Enhanced glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
 }
 
 /* Header */
 header {
-    background: linear-gradient(to bottom, #005a9e, #0078d4); /* Aero blue gradient */
+    background: linear-gradient(to bottom, #0078d4, #005a9e); /* Aero gradient */
     color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -28,7 +28,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.8em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ header h1 {
 
 .player-header h2 {
     font-size: 2em;
-    color: #0078d4; /* Blue for emphasis */
+    color: #0078d4; /* Blue emphasis */
 }
 
 .player-controls {
@@ -48,10 +48,10 @@ header h1 {
 }
 
 .control-button {
-    background: linear-gradient(to bottom, #0078d4, #005a9e); /* Gradient button */
+    background: linear-gradient(to bottom, #0078d4, #005a9e); /* Gradient */
     color: #ffffff;
     border: none;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular buttons */
     padding: 20px;
     font-size: 1.6em;
     cursor: pointer;
@@ -61,7 +61,7 @@ header h1 {
 }
 
 .control-button:hover {
-    background: #005a9e; /* Darker blue on hover */
+    background: #005a9e; /* Darker on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -78,7 +78,7 @@ header h1 {
     width: 100%;
     appearance: none;
     height: 10px;
-    background: rgba(0, 120, 215, 0.3); /* Semi-transparent progress bar */
+    background: rgba(0, 120, 215, 0.3); /* Semi-transparent */
     border-radius: 5px;
     outline: none;
     margin: 20px 0;
@@ -100,12 +100,9 @@ header h1 {
     margin-top: 40px;
 }
 
-#file-upload {
-    margin: 20px 0;
-}
-
-#upload-button {
-    background: linear-gradient(to bottom, #0078d4, #005a9e); /* Gradient button */
+.upload-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, #0078d4, #005a9e);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -114,16 +111,22 @@ header h1 {
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0 10px;
 }
 
-#upload-button:hover {
-    background: #005a9e; /* Darker blue on hover */
+.upload-button:hover {
+    background: #005a9e; /* Darker on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#file-upload {
+    display: none; /* Hide the actual file input */
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(to top, #005a9e, #0078d4); /* Matching the header */
+    background: linear-gradient(to top, #0078d4, #005a9e); /* Aero gradient */
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
